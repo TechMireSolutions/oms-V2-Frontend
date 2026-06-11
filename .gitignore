@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.turbo/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.local
+.env*.local
+!.env.example
+.DS_Store
+*.log
+packages/*/node_modules/
+packages/*/dist/
+packages/*/.turbo/
+packages/*.tsbuildinfo

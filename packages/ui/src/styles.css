@@ -1,0 +1,23 @@
+/* Shared base styles consumed via `import "@oms/ui/styles.css"`. */
+:root {
+  --oms-radius: 0.75rem;
+  --oms-font: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Design-system button variants (used by @oms/ui Button). */
+button[data-variant] {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  transition: all 200ms;
+}
+button[data-variant]:active { transform: scale(0.98); }
+button[data-variant]:disabled { opacity: 0.5; pointer-events: none; }
+button[data-variant="primary"] { background-color: #f97316; }
+button[data-variant="primary"]:hover { background-color: #ea580c; }
+button[data-variant="secondary"] { background-color: #6b7280; }
+button[data-variant="secondary"]:hover { background-color: #374151; }
+button[data-variant="danger"] { background-color: #dc2626; }
+button[data-variant="danger"]:hover { background-color: #b91c1c; }

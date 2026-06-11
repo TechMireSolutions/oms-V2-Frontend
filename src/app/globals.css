@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design-system palette. Orange is the single brand color (hardcoded).
+   These also serve as fallbacks for any utility that still reads a token var. */
+:root {
+  --color-primary: #ea580c;   /* orange-600 */
+  --color-secondary: #6b7280; /* gray-500 */
+  --color-accent: #f59e0b;    /* amber-500 */
+  --color-bg: #f9fafb;        /* gray-50 */
+  --color-fg: #111827;        /* gray-900 */
+  --color-success: #15803d;
+  --color-warning: #a16207;
+  --color-danger: #b91c1c;
+  --radius-base: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1rem;
+  --font-base: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-base);
+}
+
+/* All interactive elements get a smooth transition by default. */
+button,
+a,
+input,
+select,
+textarea {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 200ms;
+}
